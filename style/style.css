@@ -3,3 +3,8 @@
 
     Trong truong hop muon them CSS thi tao them file CSS moi.
 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
