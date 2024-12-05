@@ -1,0 +1,50 @@
+#home .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('../assets/images/intro-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh;
+    position: relative;
+    z-index: 2;
+}
+
+#home .intro-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+#home .intro-content h1 {
+    font-size: 3rem;
+    color: #27b9ec;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+#home .intro-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 800px; 
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: left; 
+    margin-left: 5%;
+    z-index: 2;
+}
