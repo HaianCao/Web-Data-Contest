@@ -2,13 +2,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/images/intro-background.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
     scroll-behavior: auto;
+}
+
+#home {
+  position: relative;
+  z-index: 1;
 }
 
 #home .intro-content {
@@ -19,6 +22,8 @@ html, body {
     padding: 60px 20px;
     text-align: center;
     background-position: center;
+    background-image: url('../assets/images/intro-background.jpg');
+    background-size: cover;
     color: white;
     height: 70vh;
     position: relative;
@@ -32,7 +37,8 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.9); 
     z-index: 1;
 }
 
@@ -49,13 +55,134 @@ html, body {
 }
 
 #home .intro-content p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     line-height: 1.6;
     max-width: 800px; 
-    text-align: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    text-align: left; 
+    text-align: justify; 
     margin-left: 5%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     z-index: 2;
+}
+
+/* Mission Section */
+.mission {
+    background-color: white; 
+    padding: 40px 0; 
+    position: relative;
+    z-index: 2;
+}
+
+.mission-title {
+    margin-left: 5%; 
+}
+
+.mission-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5vh;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+
+.mission-text {
+    display: flex;
+    align-items: center; 
+    text-align: left; 
+    margin-left: 5%; 
+    height: 100%; 
+}
+
+.mission-text p {
+    margin: 0; 
+    text-align: justify;
+    line-height: 1.8rem;
+    padding-bottom: 10%;
+}
+
+.mission-image {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.mission-image img {
+    max-width: 80%;
+    width: 65%;
+    height: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*About-us Section*/
+.about-us {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.about-us h1 {
+  padding-left: 5%;
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.host-HAMIC,
+.host-MIM {
+  display: flex; 
+  align-items: flex-start; 
+  gap: 20px; 
+  margin-bottom: 40px;
+}
+
+.HAMIC-image,
+.MIM-image {
+  flex: 1; 
+  text-align: center; 
+  padding-left: 5%;
+}
+
+.HAMIC-image img,
+.MIM-image img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.host-HAMIC .text-content,
+.host-MIM .text-content {
+  flex: 2; 
+  display: flex; 
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.host-HAMIC h2,
+.host-MIM h2 {
+  padding-left: 7.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0; 
+}
+
+.host-HAMIC p,
+.host-MIM p {
+  margin: 0;
+  padding-left:7.5%;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify; 
+  color: #555;
 }
