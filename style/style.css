@@ -7,4 +7,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("../assets/images/Background.png");
+    background-size: 100% 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scroll-behavior: auto;
 }
