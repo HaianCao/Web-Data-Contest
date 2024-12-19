@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- DAY LA WEBPAGE CHINH (TRANG CHU / HOME) -->
@@ -105,7 +106,7 @@
         </div>
 
         <!-- Gioi thieu ve don vi to chuc: HAMIC, MM -->
-        <div class="about-us">
+        <div id="aboutus" class="about-us">
           <h1>ĐƠN VỊ TỔ CHỨC</h1>
           <div class="host-HAMIC">
             <!-- Hình ảnh bên trái -->
@@ -155,7 +156,7 @@
 
             images.forEach((image) => {
               image.addEventListener("mouseenter", () => {
-                image.style.transform = "scale(1.1)"; 
+                image.style.transform = "scale(1.1)";  
                 image.style.transition = "transform 0.3s ease"; 
               });
 
@@ -186,6 +187,20 @@
         <div>
 
         </div>
+
+        <!-- Register navigator -->
+        <div class="wrapper">
+          <div id="register">
+            <div class="content">
+              <h1>Đăng ký ngay hôm nay</h1>
+              <p>Câu gì đó khiến mọi người phải đăng ký...</p>
+              <button class="cta-button" onclick="location.href='#register-now'">
+                Register
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+        </div>
+</div>
     </div>
 
     <!-- [FOOTER] -->
