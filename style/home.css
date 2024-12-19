@@ -27,7 +27,7 @@
     right: 0;
     bottom: 0;
     height: 70vh;
-    background: rgba(0, 0, 0, 0.9); 
+    background: rgba(0, 0, 0, 0.9);
     z-index: 1;
 }
 
@@ -47,8 +47,8 @@
     font-size: 1.2rem;
     margin-bottom: 20px;
     line-height: 1.6;
-    max-width: 800px; 
-    text-align: justify; 
+    max-width: 800px;
+    text-align: justify;
     margin-left: 5%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     z-index: 2;
@@ -56,14 +56,14 @@
 
 /* Mission Section */
 .mission {
-    background-color: white; 
-    padding: 40px 0; 
+    background-color: white;
+    padding: 40px 0;
     position: relative;
     z-index: 2;
 }
 
 .mission-title {
-    margin-left: 5%; 
+    margin-left: 5%;
 }
 
 .mission-title h2 {
@@ -76,21 +76,21 @@
 
 .mission-content {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
 .mission-text {
     display: flex;
-    align-items: center; 
-    text-align: left; 
-    margin-left: 5%; 
-    height: 100%; 
+    align-items: center;
+    text-align: left;
+    margin-left: 5%;
+    height: 100%;
 }
 
 .mission-text p {
-    margin: 0; 
+    margin: 0;
     text-align: justify;
     line-height: 1.8rem;
     padding-bottom: 10%;
@@ -98,8 +98,8 @@
 
 .mission-image {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .mission-image img {
@@ -122,39 +122,39 @@
   text-align: left;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #333;
+  color: white;
 }
 
 
 .host-HAMIC,
 .host-MIM {
-  display: flex; 
-  align-items: flex-start; 
-  gap: 20px; 
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
   margin-bottom: 40px;
 }
 
 .HAMIC-image,
 .MIM-image {
-  flex: 1; 
-  text-align: center; 
+  flex: 1;
+  text-align: center;
   padding-left: 5%;
 }
 
 .HAMIC-image img,
 .MIM-image img {
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .host-HAMIC .text-content,
 .host-MIM .text-content {
-  flex: 2; 
-  display: flex; 
+  flex: 2;
+  display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .host-HAMIC h2,
@@ -162,16 +162,118 @@
   padding-left: 7.5%;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
-  margin: 0; 
+  color: white;
+  margin: 0;
 }
 
 .host-HAMIC p,
 .host-MIM p {
   margin: 0;
   padding-left:7.5%;
+  padding-right: 2.5%;
   font-size: 1rem;
   line-height: 1.8;
-  text-align: justify; 
-  color: #555;
+  text-align: justify;
+  color: white;
+}
+
+
+
+
+/* Register navigator */
+.wrapper {
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  background-color: white;
+}
+
+#register {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  background: url('../assets/images/HAMIC.JPG') no-repeat center center/cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 25px; 
+}
+
+#register::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+
+#register .content {
+  position: relative;
+  z-index: 2;
+  max-width: 75%px;
+  padding: 20px;
+}
+
+#register h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    background: linear-gradient(90deg, #4fb8ff, #ff8c00, #ff0080, #4fb8ff); /* Gradient colors */
+    background-size: 200% 100%; /* Make the gradient larger for smooth animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 5s infinite linear; /* Apply animation */
+    text-align: center;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%; /* Start gradient at the beginning */
+    }
+    100% {
+        background-position: 200% 50%; /* Move gradient fully to the right */
+    }
+}
+
+#register p {
+  font-size: 1.5rem;
+  margin: 0 0 20px;
+  color: #ddd; 
+}
+
+#register .cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4fb8ff; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#register .cta-button:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+#register .cta-button img {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+#register .cta-button i {
+  margin-left: 10px; 
+  font-size: 20px; 
 }
