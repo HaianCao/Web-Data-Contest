@@ -11,7 +11,7 @@
   background-position: center;
   color: white;
   text-align: center;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,9 +372,9 @@
   height: 100%;
 }
 
-* {
+/* * {
   font-family: Nunito, sans-serif;
-}
+} */
 
 .team-cards-inner-container {
   display: flex;
