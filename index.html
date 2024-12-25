@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="style/footer.css">
   <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="./script/changeLanguage.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
   <!-- DAY LA WEBPAGE CHINH (TRANG CHU / HOME) -->
 
   <!-- 
@@ -40,19 +41,29 @@
   <nav class="navbar">
     <div class="logo"><img src="./assets/icons/Logo_ Trong trang.png" alt=""></div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#aboutus">About Us</a></li>
-      <li><a href="#timeline">Timeline</a></li>
-      <li><a href="elements/sponsor.html">Sponsors</a></li>
-      <li><a href="#prizes">Prizes</a></li>
-      <li><a href="elements/register.html">Register</a></li>
-      <li><a href="elements/faq.html">FAQs</a></li>
+        <!-- English -->
+      <li class="english"><a href="index.html">Home</a></li>
+      <li class="english"><a href="#aboutus">About Us</a></li>
+      <li class="english"><a href="#timeline">Timeline</a></li>
+      <li class="english"><a href="elements/sponsor.html">Sponsors</a></li>
+      <li class="english"><a href="#prizes">Prizes</a></li>
+      <li class="english"><a href="elements/register.html">Register</a></li>
+      <li class="english"><a href="elements/faq.html">FAQs</a></li>
+      <!-- Vietnamese -->
+      <li class="vietnamese"><a href="index.html">Trang chủ</a></li>
+      <li class="vietnamese"><a href="#aboutus">Về chúng tôi</a></li>
+      <li class="vietnamese"><a href="#timeline">Lịch trình</a></li>
+      <li class="vietnamese"><a href="elements/sponsor.html">Nhà tài trợ</a></li>
+      <li class="vietnamese"><a href="#prizes">Phần thưởng</a></li>
+      <li class="vietnamese"><a href="elements/register.html">Đăng ký</a></li>
+      <li class="vietnamese"><a href="elements/faq.html">Hỏi đáp</a></li>
+      <!-- Change language -->
       <li class="language">
         <img class="lang en-gb" width="28" height="28" src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png"
-          alt="united-kingdom-emoji" />
+          alt="united-kingdom-emoji" onclick="changeToEnglish()"/>
         <span class="separator">/</span>
         <img class="lang vi-vn" width="28" height="28" src="https://img.icons8.com/emoji/28/vietnam-emoji.png"
-          alt="vietnam-emoji" />
+          alt="vietnam-emoji" onclick="changeToVietnamese()"/>
       </li>
     </ul>
     <div class="hamburger">
@@ -66,29 +77,53 @@
   <div id="home">
     <!-- Brief Introduce (Gioi thieu ngan)-->
     <div class="intro-content">
-      <h1>HAMIC DATA FLOW</h1>
-      <p>
+      <h1>DataFlow 2025</h1>
+      <!-- English -->
+      <p class="english">
+        "DataFlow 2025: Mastering the Data Waves" is an exciting data analytics competition co-hosted by the HUS Applied 
+        Mathematics and Informatics Club (HAMIC) and MIM Media (MM). This event challenges participants with simulated problems 
+        in the fields of economics and finance. By leveraging data and applying advanced tools and techniques 
+        in Data Science, contestants will deliver in-depth analyses and propose innovative solutions.
+      </p>
+      <!-- Vietnam -->
+      <p class="vietnamese">
         “DATAFLOW: Matering the Data Waves” là một cuộc thi phân tích dữ liệu đầy hấp dẫn, được đồng tổ chức bởi CLB
         Toán Tin HAMIC và CLB truyền thông MIM Media.
         Cuộc thi mang đến cơ hội để các thí sinh đối mặt với những bài toán giả lập trong lĩnh vực kinh tế và tài chính.
         Bằng việc khai thác dữ liệu và ứng dụng các công cụ, kỹ thuật tiên tiến của Khoa học dữ liệu, các thí sinh sẽ
-        đưa ra những phân tích chuyên sâu và giải pháp sáng tạo.</p>
-      <p>
+        đưa ra những phân tích chuyên sâu và giải pháp sáng tạo.
+      </p>
+
+        <!-- DELETED -->
+      <!-- <p>
         Đối tượng tham gia là sinh viên đến từ các trường Đại học, Cao đẳng trên địa bàn Hà Nội, đặc biệt là những bạn
         trẻ đang theo học các ngành Khoa học dữ liệu,
         Công nghệ thông tin và Tài chính. Đây là sân chơi lý tưởng để các bạn thử sức, rèn luyện tư duy phân tích
         và phát triển kỹ năng thực chiến trong một môi trường đầy thách thức và cơ hội.
-      </p>
+      </p> -->
     </div>
 
     <!-- Su menh cuoc thi -->
     <div class="mission">
       <div class="mission-title">
-        <h2>DATA FLOW 2025</h2>
+        <!-- English -->
+        <h2 class="english">Mission</h2>
+        <!-- Vietnam -->
+        <h2 class="vietnamese">Sứ mệnh</h2>
       </div>
       <div class="mission-content">
         <div class="mission-text">
-          <p>
+            <!-- English -->
+            <p class="english">
+                The competition aspires to establish a dynamic platform where students can translate 
+                their academic knowledge into practical solutions for real-world challenges in economics 
+                and finance. By encouraging creativity and honing analytical thinking, as well as enhancing 
+                teamwork, communication, and presentation skills, this competition equips young talents with 
+                the essential tools needed to thrive in the demanding landscape of today’s professional 
+                environment.
+            </p>
+            <!-- Vietnam -->
+          <p class="vietnamese">
             Cuộc thi hướng đến việc tạo ra một sân chơi chuyên nghiệp, nơi sinh viên có thể áp dụng kiến thức học thuật
             để giải quyết các bài toán thực tiễn
             trong lĩnh vực kinh tế và tài chính. Với mục đích thúc đẩy sự sáng tạo, phát triển tư duy phân tích, nâng
@@ -98,7 +133,7 @@
           </p>
         </div>
         <div class="mission-image">
-          <img src="./assets/images/intro-background.jpg" alt="Vietnam Datathon 2024 Highlights">
+          <img src="./assets/images/intro.jpg" alt="Vietnam Datathon 2024 Highlights">
           <script>
             document.addEventListener("DOMContentLoaded", function () {
               const missionImage = document.querySelector(".mission-image img");
@@ -117,7 +152,10 @@
 
     <!-- Gioi thieu ve don vi to chuc: HAMIC, MM -->
     <div id="aboutus" class="about-us">
-      <h1>ĐƠN VỊ TỔ CHỨC</h1>
+        <!-- English -->
+      <h1 class="english">Host of DataFlow 2025</h1>
+      <!-- Vietnam -->
+      <h1 class="vietnamese">Đơn vị tổ chức</h1>
       <div class="host-HAMIC">
         <!-- Hình ảnh bên trái -->
         <div class="HAMIC-image">
@@ -125,9 +163,13 @@
         </div>
         <!-- Văn bản bên phải -->
         <div class="text-content">
-          <h2>CLB HAMIC Toán Tin</h2>
-          <p>
-            HAMIC - HUS Applied Mathematics Informatics Club là một trong những câu lạc bộ học thuật về công nghệ thông
+            <!-- English -->
+            <h2 class="english">HUS Applied Mathematics and Informatics Club</h2>
+            <!-- Vietnam -->
+            <h2 class="vietnamese">Câu lạc bộ Toán Tin HAMIC</h2>
+          <!-- <h2>Câu lạc bộ Toán Tin HAMIC</h2> -->
+          <p class="vietnamese">
+            HAMIC - HUS Applied Mathematics and Informatics Club là một trong những câu lạc bộ học thuật về công nghệ thông
             tin hàng đầu của ĐHQGHN
             nói chung và ĐH Khoa học Tự nhiên nói riêng với mục tiêu hỗ trợ sinh viên học tập, nghiên cứu và ứng dụng
             toán học cũng như phát triển
@@ -149,8 +191,26 @@
         </div>
         <!-- Văn bản bên phải -->
         <div class="text-content">
-          <h2>CLB MIM MEDIA</h2>
-          <p>
+            <h2>MIM Media</h2>
+          <!-- <h2>Câu lạc bộ MIM Media</h2> -->
+          <!-- English -->
+            <p class="english">
+                MIM Media is the official media club of the Faculty of Mathematics - Mechanics - Informatics 
+                at the University of Science, Vietnam National University, Hanoi. Established on October 7, 2020, 
+                by a group of passionate and dynamic students, MIM Media serves as a creative hub where young 
+                talents can excel in various fields, including photography, video production, graphic design, 
+                and event media management.
+                <br>
+                <br>
+                More than just a platform for honing professional skills, MIM Media has left its mark through 
+                organizing prominent events such as the Web Contest, the Faculty’s annual football tournament, 
+                team building activities, and many other impactful events. With its diverse and meaningful 
+                initiatives, both on and off campus, MIM Media not only fosters personal growth among its 
+                members but also plays a vital role in enriching the student community, inspiring creativity, 
+                and cultivating a strong sense of connection.
+            </p>
+          <!-- Vietnam -->
+          <p class="vietnamese">
             MIM Media là câu lạc bộ truyền thông trực thuộc Khoa Toán - Cơ - Tin học, Trường Đại học Khoa học Tự nhiên,
             ĐHQGHN.
             Được sáng lập vào ngày 07/10/2020 bởi một nhóm sinh viên đầy nhiệt huyết và đam mê sáng tạo, MIM Media mang
@@ -189,13 +249,19 @@
 
     <!-- Thoi gian, dia diem to chuc -->
     <div id="timeline">
-      <h1>Timeline cuộc thi</h1>
+        <!-- English -->
+      <h1 class="english">Timeline</h1>
+      <!-- Vietnam -->
+      <h1 class="vietnamese">Lịch trình</h1>
       <img src="./assets/images/[DF] timeline.png" alt="timeline">
     </div>
 
     <!-- Gioi thieu cac nha tai tro (gioi thieu ngan) -->
     <div id="sponsor">
-      <h1 class="sponsor-title">Nhà tài trợ kim cương </h1>
+      <h1 class="sponsor-title english" style="color: rgb(114, 114, 255);">Sponsors</h1>
+      <h1 class="sponsor-title vietnamese" style="color: rgb(114, 114, 255);">Nhà tài trợ</h1>
+      <h1 class="sponsor-title english">Golden</h1>
+      <h1 class="sponsor-title vietnamese">Vàng</h1>
       <div class="diamond">
         <div class="logo-container">
           <img src="./assets/images/logo.png" alt="Logo 1">
@@ -205,7 +271,8 @@
         </div>
       </div>
 
-      <h1 class="sponsor-title">Nhà tài trợ vàng</h1>
+      <h1 class="sponsor-title english">Silver</h1>
+      <h1 class="sponsor-title vietnamese">Bạc</h1>
       <div class="diamond">
         <div class="logo-container">
           <img src="./assets/images/logo.png" alt="Logo 1">
@@ -215,25 +282,25 @@
         </div>
       </div>
 
-      <h1 class="sponsor-title">Nhà tài trợ bạc</h1>
+      <!-- <h1 class="sponsor-title">Bronze</h1>
       <div class="diamond">
         <div class="logo-container">
           <img src="./assets/images/logo.png" alt="Logo 1">
           <img src="./assets/images/logo.png" alt="Logo 2">
           <img src="./assets/images/logo.png" alt="Logo 3">
-          <!-- Thêm các logo khác tại đây -->
+          Thêm các logo khác tại đây
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Gioi thieu ban giam khao -->
-    <div id="judgement">
+    <!-- <div id="judgement">
       <div class="responsive-container-block outer-container">
         <div class="responsive-container-block inner-container">
           <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-4 wk-ipadp-5 content-container">
             <div class="content-box">
               <p class="text-blk section-head">
-              <h1 style="color: white;">GIÁM KHẢO</h1>
+              <h1 style="color: white;">Judges and Advisors</h1>
               </p>
               <p class="text-blk section-body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -319,7 +386,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Giai thuong va loi ich -->
     <div>
@@ -329,11 +396,21 @@
     <!-- Register navigator -->
     <div class="wrapper">
       <div id="register">
-        <div class="content">
-          <h1>Đăng ký ngay hôm nay</h1>
-          <p>Câu gì đó khiến mọi người phải đăng ký...</p>
+        <!-- English -->
+        <div class="content english">
+          <h1>Participate now!</h1>
+          <p>Mastering the Data Waves, prove yourself...</p>
           <button class="cta-button" onclick="location.href='#register-now'">
             Register
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Vietnam -->
+        <div class="content vietnamese">
+          <h1 >Tham gia ngay!</h1>
+          <p class="vietnamese">Lướt trên con sóng dữ liệu, khẳng định bản thân mình...</p>
+          <button class="cta-button vietnamese" onclick="location.href='#register-now'">
+            Đăng ký
             <i class="fas fa-arrow-right"></i>
           </button>
         </div>
@@ -347,12 +424,27 @@
     <img class="mainlogo" src="./assets/icons/Logo_ Trong trang.png" alt="Main Logo">
     <div class="footer-container">
       <div class="footer-item footer-club">
-        <h3>CLB TOÁN TIN HAMIC</h3>
+        <!-- English -->
+        <h3 class="english">HUS Applied Mathematics and Informatics Club</h3>
+        <!-- Vietnam -->
+         <h3 class="vietnamese">Toán Tin HAMIC</h3>
         <div class="social-links">
           <a href="https://www.facebook.com/toantinhamic" target="_blank">
             <img src="./assets/icons/hamicfullnolabel2.png" alt="HAMIC" class="social-icon-hamic">
           </a>
-          <div>
+          <!-- English -->
+          <div class="english">
+            <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
+                class="footer-link">HAMIC - CLB Toán Tin</a></p>
+            <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
+                class="footer-link">m.me/toantinhamic</a></p>
+            <p class="footer-contact"><b>Email:</b> <a href="mailto:hamic@hus.edu.vn"
+                class="footer-link">hamic@hus.edu.vn</a></p>
+            <p class="footer-contact"><b>Head of contest:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a></p>
+            <p class="footer-contact"><b>Phone:</b><a href="tel:+84379061825" class="footer-link"> 0379061825</a>
+          </div>
+          <!-- Vietnam -->
+          <div class="vietnamese">
             <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
                 class="footer-link">HAMIC - CLB Toán Tin</a></p>
             <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
@@ -366,12 +458,28 @@
       </div>
 
       <div class="footer-item footer-club">
-        <h3>CLB MIM MEDIA</h3>
+        <!-- Englíh -->
+        <h3>MIM Media</h3>
+        <!-- Vietnam -->
+         <!-- <h3>CLB MIM Media</h3> -->
         <div class="social-links">
           <a href="https://www.facebook.com/mimmedia.hus" target="_blank">
             <img src="./assets/icons/MM.png" alt="MM" class="social-icon-mm">
           </a>
-          <div>
+          <!-- English -->
+          <div class="english">
+            <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
+                class="footer-link">MIM Media</a></p>
+            <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
+                class="footer-link">m.me/mimmedia.hus</a></p>
+            <p class="footer-contact"><b>Email:</b> <a href="mailto:mimmedia@hus.edu.vn"
+                class="footer-link">mimmedia@hus.edu.vn</a></p>
+            <p class="footer-contact"><b>Head of PR:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a></p>
+            <p class="footer-contact"><b>Phone:</b><a href="tel:+84398463203" class="footer-link"> 0398463203</a>
+            </p>
+          </div>
+          <!-- Vietnam -->
+          <div class="vietnamese">
             <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
                 class="footer-link">MIM Media</a></p>
             <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
