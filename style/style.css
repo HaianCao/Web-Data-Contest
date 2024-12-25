@@ -19,5 +19,5 @@ html, body {
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
