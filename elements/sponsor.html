@@ -12,29 +12,39 @@
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/sponsor.css">
     <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
-
+    <script src="../script/changeLanguage.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <!-- DAY LA WEBPAGE THONG TIN VE NHA TAI TRO & THONG TIN LIEN HE -->
 
     <!-- [NAVBAR] -->
     <nav class="navbar">
         <div class="logo"><img src="../assets/icons/Logo_ Trong trang.png" alt=""></div>
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#aboutus">About Us</a></li>
-            <li><a href="../index.html#timeline">Timeline</a></li>
-            <li><a href="sponsor.html">Sponsors</a></li>
-            <li><a href="../index.html#prizes">Prizes</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="faq.html">FAQs</a></li>
+            <!-- English -->
+            <li class="english"><a href="../index.html">Home</a></li>
+            <li class="english"><a href="../index.html#aboutus">About Us</a></li>
+            <li class="english"><a href="../index.html#timeline">Timeline</a></li>
+            <li class="english"><a href="sponsor.html">Sponsors</a></li>
+            <li class="english"><a href="prizes.html">Prizes</a></li>
+            <li class="english"><a href="register.html">Register</a></li>
+            <li class="english"><a href="faq.html">FAQs</a></li>
+            <!-- Vietnam -->
+            <li class="vietnamese"><a href="../index.html">Trang chủ</a></li>
+            <li class="vietnamese"><a href="../index.html#aboutus">Về chúng tôi</a></li>
+            <li class="vietnamese"><a href="../index.html#timeline">Lịch trình</a></li>
+            <li class="vietnamese"><a href="sponsor.html">Nhà tại trợ</a></li>
+            <li class="vietnamese"><a href="prizes.html">Giải thưởng</a></li>
+            <li class="vietnamese"><a href="register.html">Đăng ký</a></li>
+            <li class="vietnamese"><a href="faq.html">Hỏi đáp</a></li>
             <li class="language">
                 <img class="lang en-gb" width="28" height="28"
-                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji" />
+                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji" 
+                    onclick="changeToEnglish()"/>
                 <span class="separator">/</span>
                 <img class="lang vi-vn" width="28" height="28" src="https://img.icons8.com/emoji/28/vietnam-emoji.png"
-                    alt="vietnam-emoji" />
+                    alt="vietnam-emoji" onclick="changeToVietnamese()"/>
             </li>
         </ul>
         <div class="hamburger">
@@ -53,8 +63,10 @@
     <section class="showcase">
 
         <div class="showcase__header">
-            <h3>List of sponsors</h3>
-            <!-- <h3>Danh sách các nhà tài trợ:</h3> -->
+            <!-- English -->
+            <h3 class="english">List of sponsors</h3>
+            <!-- Vietnam -->
+            <h3 class="vietnamese">Danh sách các nhà tài trợ:</h3>
         </div>
 
         <div class="showcase_categories">
@@ -62,7 +74,8 @@
                 <div class="category__header">
                     <div class="category__title">
                         <i class="material-icons diamond-icon">diamond</i>
-                        <h4>Golden</h4>
+                        <h4 class="english">Golden</h4>
+                        <h4 class="vietnamese">Vàng</h4>
                     </div>
                     <div class="category__desc">
                         <!-- <p>Quyền lợi: Logo hiển thị nổi bật trên mọi ấn phẩm và website. Được phát biểu trong lễ khai
@@ -273,14 +286,15 @@
         <div class="footer-container">
             <div class="footer-item footer-club">
                 <!-- English -->
-                <h3>HUS Applied Mathematics and Informatics Club</h3>
+                <h3 class="english">HUS Applied Mathematics and Informatics Club</h3>
                 <!-- Vietnam -->
-                <!-- <h3>CLB Toán Tin HAMIC</h3> -->
+                <h3 class="vietnamese">CLB Toán Tin HAMIC</h3>
                 <div class="social-links">
                     <a href="https://www.facebook.com/toantinhamic" target="_blank">
                         <img src="../assets/icons/hamicfullnolabel2.png" alt="HAMIC" class="social-icon-hamic">
                     </a>
-                    <div>
+                    <!-- English -->
+                    <div class="english">
                         <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
                             class="footer-link">HAMIC - CLB Toán Tin</a></p>
                         <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
@@ -289,6 +303,17 @@
                             class="footer-link">hamic@hus.edu.vn</a></p>
                         <p class="footer-contact"><b>Head of contest:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a></p>
                         <p class="footer-contact"><b>Phone:</b><a href="tel:+84379061825" class="footer-link"> 0379061825</a>
+                    </div>
+                    <!-- Vietnam -->
+                    <div class="vietnamese">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
+                            class="footer-link">HAMIC - CLB Toán Tin</a></p>
+                        <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
+                            class="footer-link">m.me/toantinhamic</a></p>
+                        <p class="footer-contact"><b>Email:</b> <a href="mailto:hamic@hus.edu.vn"
+                            class="footer-link">hamic@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Trưởng BTC:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a></p>
+                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84379061825" class="footer-link"> 0379061825</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +327,8 @@
                     <a href="https://www.facebook.com/mimmedia.hus" target="_blank">
                         <img src="../assets/icons/MM.png" alt="MM" class="social-icon-mm">
                     </a>
-                    <div>
+                    <!-- English -->
+                    <div class="english">
                         <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
                             class="footer-link">MIM Media</a></p>
                         <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
@@ -311,6 +337,18 @@
                             class="footer-link">mimmedia@hus.edu.vn</a></p>
                         <p class="footer-contact"><b>Head of PR:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a></p>
                         <p class="footer-contact"><b>Phone:</b><a href="tel:+84398463203" class="footer-link"> 0398463203</a>
+                        </p>
+                    </div>
+                    <!-- Vietnam -->
+                    <div class="vietnamese">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
+                            class="footer-link">MIM Media</a></p>
+                        <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
+                            class="footer-link">m.me/mimmedia.hus</a></p>
+                        <p class="footer-contact"><b>Email:</b> <a href="mailto:mimmedia@hus.edu.vn"
+                            class="footer-link">mimmedia@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Truyền thông:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a></p>
+                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84398463203" class="footer-link"> 0398463203</a>
                         </p>
                     </div>
                 </div>

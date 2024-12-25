@@ -10,29 +10,39 @@
     <link rel="stylesheet" href="../style/faq.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
-
+    <script src="../script/changeLanguage.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <!-- DAY LA WEBPAGE CAC CAU HOI THONG DUNG -->
 
     <!-- [NAVBAR] -->
     <nav class="navbar">
         <div class="logo"><img src="../assets/icons/Logo_ Trong trang.png" alt=""></div>
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#aboutus">About Us</a></li>
-            <li><a href="../index.html#timeline">Timeline</a></li>
-            <li><a href="sponsor.html">Sponsors</a></li>
-            <li><a href="../index.html#prizes">Prizes</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="faq.html">FAQs</a></li>
+            <!-- English -->
+            <li class="english"><a href="../index.html">Home</a></li>
+            <li class="english"><a href="../index.html#aboutus">About Us</a></li>
+            <li class="english"><a href="../index.html#timeline">Timeline</a></li>
+            <li class="english"><a href="sponsor.html">Sponsors</a></li>
+            <li class="english"><a href="prizes.html">Prizes</a></li>
+            <li class="english"><a href="register.html">Register</a></li>
+            <li class="english"><a href="faq.html">FAQs</a></li>
+            <!-- Vietnam -->
+            <li class="vietnamese"><a href="../index.html">Trang chủ</a></li>
+            <li class="vietnamese"><a href="../index.html#aboutus">Về chúng tôi</a></li>
+            <li class="vietnamese"><a href="../index.html#timeline">Lịch trình</a></li>
+            <li class="vietnamese"><a href="sponsor.html">Nhà tại trợ</a></li>
+            <li class="vietnamese"><a href="prizes.html">Giải thưởng</a></li>
+            <li class="vietnamese"><a href="register.html">Đăng ký</a></li>
+            <li class="vietnamese"><a href="faq.html">Hỏi đáp</a></li>
             <li class="language">
                 <img class="lang en-gb" width="28" height="28"
-                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji" />
+                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji" 
+                    onclick="changeToEnglish()"/>
                 <span class="separator">/</span>
                 <img class="lang vi-vn" width="28" height="28" src="https://img.icons8.com/emoji/28/vietnam-emoji.png"
-                    alt="vietnam-emoji" />
+                    alt="vietnam-emoji" onclick="changeToVietnamese()"/>
             </li>
         </ul>
         <div class="hamburger">
@@ -47,8 +57,11 @@
         voi moi cau hoi khi an vao thi se tha xuong 1 cai hop la cau tra loi (collapse).
     -->
     <div class="faq-header">
-        <h1 class="faq-header-title">FAQs</h1>
-        <p class="faq-header-desc">Frequently Ask Questions</p>
+        <!-- English -->
+        <h1 class="faq-header-title english">FAQs</h1>
+        <p class="faq-header-desc english">Frequently Ask Questions</p>
+        <h1 class="faq-header-title vietnamese">Hỏi đáp</h1>
+        <p class="faq-header-desc vietnamese">Các câu hỏi phổ biến</p>
         <br><br><br><br>
         <!-- search -->
         <!-- <div class="faq-search">
@@ -63,170 +76,194 @@
             <h1 class="faq-head">Have <br> questions?</h1>
             <img class="faq-img" src="../assets/images/faq/faq.jpg">
         </div> -->
-        <div class="faq-box">
+        <!-- English -->
+        <div class="faq-box english">
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-1">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-1">Who is eligible to participate in the competition?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-1e">
+                <label class="faq-title" for="faq-trigger-1e">Who is eligible to participate in the competition?</label>
                 <div class="faq-detail">
                     <p>The competition is open to all students currently enrolled at universities and colleges 
                         in Hanoi, especially those studying Data Science, Information Technology, and Finance.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-1">Cuộc thi dành cho đối tượng nào?</label>
-                <div class="faq-detail">
-                    <p>Cuộc thi dành cho tất cả sinh viên đang học tại các trường Đại học,
-                        Cao đẳng trên địa bàn Hà Nội, đặc biệt các bạn đang theo học ngành Khoa học dữ liệu,
-                        Công nghệ thông tin, Tài chính.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-2">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-2">Can I participate if I don’t have a team?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-2e">
+                <label class="faq-title" for="faq-trigger-2e">Can I participate if I don’t have a team?</label>
                 <div class="faq-detail">
                     <p>Yes, you can. The organizing committee will help match individual applicants with teams based on their preferences and skills.
                     </p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-2">Tôi có thể tham gia cuộc thi nếu chưa có đội không?</label>
-                <div class="faq-detail">
-                    <p>Có. Ban tổ chức sẽ ghép đội dựa trên yêu cầu và khả năng của các cá nhân đăng ký lẻ.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-3">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-3">What do I need to prepare to join?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-3e">
+                <label class="faq-title" for="faq-trigger-3e">What do I need to prepare to join?</label>
                 <div class="faq-detail">
                     <p>You should have a basic understanding of data analysis, processing techniques, and 
                         modeling, along with strong teamwork skills. Additionally, you’ll need devices for 
                         online work and presentations during the competition.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-3">Tôi cần chuẩn bị những gì để tham gia?</label>
-                <div class="faq-detail">
-                    <p>Bạn cần có kiến thức cơ bản về phân tích dữ liệu, các kỹ thuật xử lý và mô hình hóa,
-                        cùng tinh thần làm việc nhóm. Ngoài ra, cần có thiết bị để làm việc trực tuyến và trình bày
-                        trong các vòng thi.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-4">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-4">How can I register?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-4e">
+                <label class="faq-title" for="faq-trigger-4e">How can I register?</label>
                 <div class="faq-detail">
                     <p>You can register online through the registration link provided on the HAMIC Math-Informatics Club’s fanpage.
                     </p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-4">Làm thế nào để đăng ký tham gia?</label>
-                <div class="faq-detail">
-                    <p>Bạn có thể đăng ký trực tuyến qua link đăng ký được cung cấp fanpage của CLB Toán tin HAMIC</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-5">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-5">How many members are allowed per team?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-5e">
+                <label class="faq-title" for="faq-trigger-5e">How many members are allowed per team?</label>
                 <div class="faq-detail">
                     <p>Each team should consist of 3 to 4 members.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-5">Một đội thi có bao nhiêu thành viên?</label>
-                <div class="faq-detail">
-                    <p>Mỗi đội thi có từ 3 đến 4 thành viên.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-6">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-6">What is the format of the competition?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-6e">
+                <label class="faq-title" for="faq-trigger-6e">What is the format of the competition?</label>
                 <div class="faq-detail">
                     <p>The preliminary round will be conducted online. The final round will combine online 
                         collaboration and an in-person presentation during the finale.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-6">Cuộc thi diễn ra theo hình thức nào?</label>
-                <div class="faq-detail">
-                    <p>Vòng loại sẽ diễn ra trực tuyến, vòng chung kết sẽ kết hợp làm việc trực tuyến và thuyết trình
-                        trực tiếp tại đêm chung kết.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-7">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-7">What fields do the competition problems cover?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-7e">
+                <label class="faq-title" for="faq-trigger-7e">What fields do the competition problems cover?</label>
                 <div class="faq-detail">
                     <p>The problems will focus on economics, finance, and banking, provided by sponsor companies 
                         and professional advisory units.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-7">Các bài toán trong cuộc thi thuộc lĩnh vực nào?</label>
-                <div class="faq-detail">
-                    <p>Các bài toán thuộc lĩnh vực kinh tế, tài chính và ngân hàng, được cung cấp bởi các doanh nghiệp
-                        tài trợ và đơn vị bảo trợ chuyên môn.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-8">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-8">What documents do I need to submit during the 
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-8e">
+                <label class="faq-title" for="faq-trigger-8e">What documents do I need to submit during the 
                     competition?</label>
                 <div class="faq-detail">
                     <p>Preliminary Round: Data analysis and processing report, presentation slides, source code, 
                         and any related documents.</p>
                     <p>Final Round: A completed report, presentation slides, and all processed data materials.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-8">Tôi cần nộp những tài liệu gì cho các vòng thi?</label>
-                <div class="faq-detail">
-                    <p>Vòng loại: Báo cáo phân tích và xử lý dữ liệu, slide trình bày, mã nguồn và các tài liệu liên
-                        quan.</p>
-                    <p>Vòng chung kết: Báo cáo, slide thuyết trình, và toàn bộ tài liệu xử lý dữ liệu đã hoàn thiện.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-9">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-9">How will the prizes be awarded?</label>
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-9e">
+                <label class="faq-title" for="faq-trigger-9e">How will the prizes be awarded?</label>
                 <div class="faq-detail">
                     <p>Prizes will be presented during the in-person finale. Winning teams will receive 
                         certificates and cash prizes as announced in the competition structure.</p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-9">Giải thưởng sẽ được trao như thế nào?</label>
-                <div class="faq-detail">
-                    <p>Giải thưởng sẽ được trao trong đêm chung kết trực tiếp.
-                        Các đội đạt giải sẽ nhận được giấy chứng nhận và tiền thưởng theo cơ cấu đã công bố.</p>
-                </div> -->
             </div>
 
             <div class="faq-wrapper">
-                <input type="checkbox" class="faq-trigger" id="faq-trigger-10">
-                <!-- English -->
-                <label class="faq-title" for="faq-trigger-10">Will the organizing committee provide technical support 
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-10e">
+                <label class="faq-title" for="faq-trigger-10e">Will the organizing committee provide technical support 
                     during the competition?</label>
                 <div class="faq-detail">
                     <p>Yes, the organizing committee will offer workshops and respond to inquiries throughout the 
                         competition.
                     </p>
                 </div>
-                <!-- Vietnam -->
-                <!-- <label class="faq-title" for="faq-trigger-10">Ban tổ chức có hỗ trợ kỹ thuật trong quá trình thi
+            </div>
+        </div>
+
+        <!-- Vietnam -->
+        <div class="faq-box vietnamese">
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-1v">
+                <label class="faq-title" for="faq-trigger-1v">Cuộc thi dành cho đối tượng nào?</label>
+                <div class="faq-detail">
+                    <p>Cuộc thi dành cho tất cả sinh viên đang học tại các trường Đại học,
+                        Cao đẳng trên địa bàn Hà Nội, đặc biệt các bạn đang theo học ngành Khoa học dữ liệu,
+                        Công nghệ thông tin, Tài chính.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-2v">
+                <label class="faq-title" for="faq-trigger-2v">Tôi có thể tham gia cuộc thi nếu chưa có đội không?</label>
+                <div class="faq-detail">
+                    <p>Có. Ban tổ chức sẽ ghép đội dựa trên yêu cầu và khả năng của các cá nhân đăng ký lẻ.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-3v">
+                <label class="faq-title" for="faq-trigger-3v">Tôi cần chuẩn bị những gì để tham gia?</label>
+                <div class="faq-detail">
+                    <p>Bạn cần có kiến thức cơ bản về phân tích dữ liệu, các kỹ thuật xử lý và mô hình hóa,
+                        cùng tinh thần làm việc nhóm. Ngoài ra, cần có thiết bị để làm việc trực tuyến và trình bày
+                        trong các vòng thi.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-4v">
+                <label class="faq-title" for="faq-trigger-4v">Làm thế nào để đăng ký tham gia?</label>
+                <div class="faq-detail">
+                    <p>Bạn có thể đăng ký trực tuyến qua link đăng ký được cung cấp fanpage của CLB Toán tin HAMIC</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-5v">
+                <label class="faq-title" for="faq-trigger-5v">Một đội thi có bao nhiêu thành viên?</label>
+                <div class="faq-detail">
+                    <p>Mỗi đội thi có từ 3 đến 4 thành viên.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-6v">
+                <label class="faq-title" for="faq-trigger-6v">Cuộc thi diễn ra theo hình thức nào?</label>
+                <div class="faq-detail">
+                    <p>Vòng loại sẽ diễn ra trực tuyến, vòng chung kết sẽ kết hợp làm việc trực tuyến và thuyết trình
+                        trực tiếp tại đêm chung kết.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-7v">
+                <label class="faq-title" for="faq-trigger-7v">Các bài toán trong cuộc thi thuộc lĩnh vực nào?</label>
+                <div class="faq-detail">
+                    <p>Các bài toán thuộc lĩnh vực kinh tế, tài chính và ngân hàng, được cung cấp bởi các doanh nghiệp
+                        tài trợ và đơn vị bảo trợ chuyên môn.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-8v">
+                <label class="faq-title" for="faq-trigger-8v">Tôi cần nộp những tài liệu gì cho các vòng thi?</label>
+                <div class="faq-detail">
+                    <p>Vòng loại: Báo cáo phân tích và xử lý dữ liệu, slide trình bày, mã nguồn và các tài liệu liên
+                        quan.</p>
+                    <p>Vòng chung kết: Báo cáo, slide thuyết trình, và toàn bộ tài liệu xử lý dữ liệu đã hoàn thiện.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-9v">
+                <label class="faq-title" for="faq-trigger-9v">Giải thưởng sẽ được trao như thế nào?</label>
+                <div class="faq-detail">
+                    <p>Giải thưởng sẽ được trao trong đêm chung kết trực tiếp.
+                        Các đội đạt giải sẽ nhận được giấy chứng nhận và tiền thưởng theo cơ cấu đã công bố.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-10v">
+                <label class="faq-title" for="faq-trigger-10v">Ban tổ chức có hỗ trợ kỹ thuật trong quá trình thi
                     không?</label>
                 <div class="faq-detail">
                     <p>Ban tổ chức sẽ cung cấp các workshop và hỗ trợ giải đáp thắc mắc trong suốt thời gian cuộc thi.
                     </p>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -237,43 +274,70 @@
         <img class="mainlogo" src="../assets/icons/Logo_ Trong trang.png" alt="Main Logo">
         <div class="footer-container">
             <div class="footer-item footer-club">
-                <h3>CLB TOÁN TIN HAMIC</h3>
+                <!-- English -->
+                <h3 class="english">HUS Applied Mathematics and Informatics Club</h3>
+                <!-- Vietnam -->
+                <h3 class="vietnamese">CLB Toán Tin HAMIC</h3>
                 <div class="social-links">
                     <a href="https://www.facebook.com/toantinhamic" target="_blank">
                         <img src="../assets/icons/hamicfullnolabel2.png" alt="HAMIC" class="social-icon-hamic">
                     </a>
-                    <div>
-                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic"
-                                target="_blank" class="footer-link">HAMIC - CLB Toán Tin</a></p>
+                    <!-- English -->
+                    <div class="english">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
+                            class="footer-link">HAMIC - CLB Toán Tin</a></p>
                         <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
-                                class="footer-link">m.me/toantinhamic</a></p>
+                            class="footer-link">m.me/toantinhamic</a></p>
                         <p class="footer-contact"><b>Email:</b> <a href="mailto:hamic@hus.edu.vn"
-                                class="footer-link">hamic@hus.edu.vn</a></p>
-                        <p class="footer-contact"><b>Trưởng BTC:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a>
-                        </p>
-                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84379061825" class="footer-link">
-                                0379061825</a>
+                            class="footer-link">hamic@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Head of contest:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a></p>
+                        <p class="footer-contact"><b>Phone:</b><a href="tel:+84379061825" class="footer-link"> 0379061825</a>
+                    </div>
+                    <!-- Vietnam -->
+                    <div class="vietnamese">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/toantinhamic" target="_blank"
+                            class="footer-link">HAMIC - CLB Toán Tin</a></p>
+                        <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/toantinhamic" target="_blank"
+                            class="footer-link">m.me/toantinhamic</a></p>
+                        <p class="footer-contact"><b>Email:</b> <a href="mailto:hamic@hus.edu.vn"
+                            class="footer-link">hamic@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Trưởng BTC:</b> <a href="#" class="footer-link">Hoàng Tuấn Tú</a></p>
+                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84379061825" class="footer-link"> 0379061825</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-item footer-club">
-                <h3>CLB MIM MEDIA</h3>
+                <!-- Englíh -->
+                <h3>MIM Media</h3>
+                <!-- Vietnam -->
+                <!-- <h3>CLB MIM Media</h3> -->
                 <div class="social-links">
                     <a href="https://www.facebook.com/mimmedia.hus" target="_blank">
                         <img src="../assets/icons/MM.png" alt="MM" class="social-icon-mm">
                     </a>
-                    <div>
-                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus"
-                                target="_blank" class="footer-link">MIM Media</a></p>
+                    <!-- English -->
+                    <div class="english">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
+                            class="footer-link">MIM Media</a></p>
                         <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
-                                class="footer-link">m.me/mimmedia.hus</a></p>
+                            class="footer-link">m.me/mimmedia.hus</a></p>
                         <p class="footer-contact"><b>Email:</b> <a href="mailto:mimmedia@hus.edu.vn"
-                                class="footer-link">mimmedia@hus.edu.vn</a></p>
-                        <p class="footer-contact"><b>Truyền thông:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a>
+                            class="footer-link">mimmedia@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Head of PR:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a></p>
+                        <p class="footer-contact"><b>Phone:</b><a href="tel:+84398463203" class="footer-link"> 0398463203</a>
                         </p>
-                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84398463203" class="footer-link">
-                                0398463203</a>
+                    </div>
+                    <!-- Vietnam -->
+                    <div class="vietnamese">
+                        <p class="footer-contact"><b>Fanpage:</b> <a href="https://www.facebook.com/mimmedia.hus" target="_blank"
+                            class="footer-link">MIM Media</a></p>
+                        <p class="footer-contact"><b>Inbox:</b> <a href="https://m.me/mimmedia.hus" target="_blank"
+                            class="footer-link">m.me/mimmedia.hus</a></p>
+                        <p class="footer-contact"><b>Email:</b> <a href="mailto:mimmedia@hus.edu.vn"
+                            class="footer-link">mimmedia@hus.edu.vn</a></p>
+                        <p class="footer-contact"><b>Truyền thông:</b> <a href="#" class="footer-link">Tạ Quang Tùng</a></p>
+                        <p class="footer-contact"><b>Điện thoại:</b><a href="tel:+84398463203" class="footer-link"> 0398463203</a>
                         </p>
                     </div>
                 </div>
