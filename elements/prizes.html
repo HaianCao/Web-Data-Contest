@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../style/prizes.css">
     <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Tektur' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/tecwo" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
     <script src="../script/changeLanguage.js"></script>
     <!-- <link href="../aaa.css" rel="stylesheet" type="text/css" /> -->
 
@@ -35,7 +40,7 @@
     </style>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <!-- [NAVBAR] -->
     <nav class="navbar">
         <div class="logo"><img src="../assets/icons/Logo_ Trong trang.png" alt=""></div>
@@ -52,17 +57,17 @@
             <li class="vietnamese"><a href="../index.html">Trang chủ</a></li>
             <li class="vietnamese"><a href="../index.html#aboutus">Về chúng tôi</a></li>
             <li class="vietnamese"><a href="../index.html#timeline">Lịch trình</a></li>
-            <li class="vietnamese"><a href="sponsor.html">Nhà tại trợ</a></li>
+            <li class="vietnamese"><a href="sponsor.html">Nhà tài trợ</a></li>
             <li class="vietnamese"><a href="prizes.html">Giải thưởng</a></li>
             <li class="vietnamese"><a href="register.html">Đăng ký</a></li>
             <li class="vietnamese"><a href="faq.html">Hỏi đáp</a></li>
             <li class="language">
                 <img class="lang en-gb" width="28" height="28"
-                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji"
-                    onclick="changeToEnglish()" />
+                    src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png" alt="united-kingdom-emoji" 
+                    onclick="changeToEnglish()"/>
                 <span class="separator">/</span>
                 <img class="lang vi-vn" width="28" height="28" src="https://img.icons8.com/emoji/28/vietnam-emoji.png"
-                    alt="vietnam-emoji" onclick="changeToVietnamese()" />
+                    alt="vietnam-emoji" onclick="changeToVietnamese()"/>
             </li>
         </ul>
         <div class="hamburger">
@@ -77,7 +82,8 @@
 
             <div class="div-block-917">
                 <div class="div-block-916">
-                    <div>Prize and Benefits</div>
+                    <div class="english">Prize and Benefits</div>
+                    <div class="vietnamese">Giải thưởng và lợi ích</div>
                 </div>
 
                 <div data-w-id="a4329130-d2e7-e82d-55bd-1cc735ac81dc" class="teaser-grid">
@@ -125,17 +131,22 @@
 
                             <div class="teaser-copy">
                                 <div class="div-block-921">
-                                    <div class="text-block-231">Giải Nhất</div>
-                                    <h2 class="title1">Tỏa sáng ngôi vị quán quân</h2>
+                                    <div class="text-block-231 english">First Prize</div>
+                                    <h2 class="title1 english">Shine in the champion's spotlight.</h2>
+                                    <div class="text-block-231 vietnamese">Giải Nhất</div>
+                                    <h2 class="title1 vietnamese">Tỏa sáng ngôi vị quán quân</h2>
                                 </div>
 
                                 <div class="p-xs-start">
-                                    <p class="copy-small">Phần thưởng cao nhất dành cho đội xuất sắc nhất, nơi tài năng
+                                    <p class="copy-small english">The highest reward is reserved for the best team, 
+                                        where talent and creativity are celebrated. This is not just a prize but 
+                                        also an opportunity to affirm your position and inspire the community.</p>
+                                    <p class="copy-small vietnamese">Phần thưởng cao nhất dành cho đội xuất sắc nhất, nơi tài năng
                                         và sự sáng tạo được vinh danh. Đây không chỉ là một phần thưởng, mà còn là cơ
                                         hội để khẳng định vị thế và truyền cảm hứng cho cộng đồng.</p>
                                 </div>
 
-                                <div><a href="/generate-interest" class="button-24 w-button">XXXXXXX.VNĐ</a></div>
+                                <!-- <div><a href="/generate-interest" class="button-24 w-button">XXXXXXX.VNĐ</a></div> -->
                             </div>
                         </div>
 
@@ -152,15 +163,20 @@
 
                             <div class="teaser-copy">
                                 <div class="div-block-921">
-                                    <div class="text-block-231">Giải Nhì</div>
-                                    <h2 class="title1">Chạm tay đến thành công</h2>
+                                    <div class="text-block-231 english">Second Prize</div>
+                                    <h2 class="title1 english">Reach for success.</h2>
+                                    <div class="text-block-231 vietnamese">Giải Nhì</div>
+                                    <h2 class="title1 vietnamese">Chạm tay đến thành công</h2>
                                 </div>
                                 <div class="p-xs-start">
-                                    <p class="copy-small">Phần thưởng danh giá dành cho đội về nhì, ghi nhận sự nỗ lực
+                                    <p class="copy-small english">A prestigious reward for the runner-up team, 
+                                        recognizing relentless effort and outstanding achievements. A proud 
+                                        milestone on the journey of overcoming challenges.</p>
+                                    <p class="copy-small vietnamese">Phần thưởng danh giá dành cho đội về nhì, ghi nhận sự nỗ lực
                                         không ngừng nghỉ và thành tích vượt bậc. Một dấu mốc đáng tự hào trên hành trình
                                         chinh phục thử thách.</p>
                                 </div>
-                                <div><a href="/capture-intent" class="button-24 w-button">XXXXXXX.VNĐ</a></div>
+                                <!-- <div><a href="/capture-intent" class="button-24 w-button">XXXXXXX.VNĐ</a></div> -->
                             </div>
                         </div>
 
@@ -177,17 +193,22 @@
 
                             <div class="teaser-copy">
                                 <div class="div-block-921">
-                                    <div class="text-block-231">Giải Ba</div>
-                                    <h2 class="title1">Bứt phá để khác biệt</h2>
+                                    <div class="text-block-231 english">Third Prize</div>
+                                    <h2 class="title1 english">Break through to stand out</h2>
+                                    <div class="text-block-231 vietnamese">Giải Ba</div>
+                                    <h2 class="title1 vietnamese">Bứt phá để khác biệt</h2>
                                 </div>
 
                                 <div class="p-xs-start">
-                                    <p class="copy-small">Đội đạt vị trí thứ ba sẽ nhận được phần thưởng xứng đáng, đánh
+                                    <p class="copy-small english">The team in third place will receive a worthy prize, 
+                                        marking their continuous efforts to rise above. This is the motivation 
+                                        to keep conquering new heights.</p>
+                                    <p class="copy-small vietnamese">Đội đạt vị trí thứ ba sẽ nhận được phần thưởng xứng đáng, đánh
                                         dấu những cố gắng không ngừng để vươn lên. Đây chính là động lực để tiếp tục
                                         chinh phục những đỉnh cao mới.</p>
                                 </div>
 
-                                <div><a href="/account-intelligence" class="button-24 w-button">XXXXXXX.VNĐ</a></div>
+                                <!-- <div><a href="/account-intelligence" class="button-24 w-button">XXXXXXX.VNĐ</a></div> -->
                             </div>
                         </div>
 
@@ -204,17 +225,22 @@
 
                             <div class="teaser-copy">
                                 <div class="div-block-921">
-                                    <div class="text-block-231">Giải Khuyến Khích</div>
-                                    <h2 class="title1">Lan tỏa tinh thần xuất sắc</h2>
+                                    <div class="text-block-231 english">Consolation Prize</div>
+                                    <h2 class="title1 english">Spread the spirit of excellence</h2>
+                                    <div class="text-block-231 vietnamese">Giải Khuyến khích</div>
+                                    <h2 class="title1 vietnamese">Lan tỏa tinh thần xuất sắc</h2>
                                 </div>
 
                                 <div class="p-xs-start">
-                                    <p class="copy-small">Hai phần thưởng khuyến khích được trao tặng nhằm tôn vinh các
+                                    <p class="copy-small english">Two encouragement prizes will be awarded to 
+                                        honor teams with unique ideas and exceptional contributions. A gesture 
+                                        of encouragement to continue breaking through and shining.</p>
+                                    <p class="copy-small vietnamese">Hai phần thưởng khuyến khích được trao tặng nhằm tôn vinh các
                                         đội có ý tưởng độc đáo và đóng góp đặc biệt. Một lời khích lệ để tiếp tục bứt
                                         phá và tỏa sáng.</p>
                                 </div>
 
-                                <div><a href="/snackable-content-hub" class="button-24 w-button">XXXXXXX.VNĐ</a></div>
+                                <!-- <div><a href="/snackable-content-hub" class="button-24 w-button">XXXXXXX.VNĐ</a></div> -->
                             </div>
                         </div>
                     </div>
@@ -222,20 +248,20 @@
                     <div class="teaser-column">
                         <div class="p-teaser-img-wrap">
                             <img sizes="(max-width: 991px) 100vw, (max-width: 1279px) 49vw, 571.328125px"
-                                srcset="../assets/images/prize/HAMIC.JPG" alt="" src="../assets/images/prize/HAMIC.JPG"
+                                srcset="../assets/images/first_prize.png" alt="" src="../assets/images/first_prize.png"
                                 loading="lazy" class="teaser-img _1" />
 
                             <img sizes="(max-width: 991px) 100vw, (max-width: 1279px) 49vw, 571.328125px"
-                                srcset="../assets/images/prize/MIM_MEDIA.jpg" alt=""
-                                src="../assets/images/prize/MIM_MEDIA.jpg" loading="lazy" class="teaser-img _2" />
+                                srcset="../assets/images/second_prize.png" alt=""
+                                src="../assets/images/second_prize.png" loading="lazy" class="teaser-img _2" />
 
                             <img sizes="(max-width: 991px) 100vw, (max-width: 1279px) 49vw, 571.328125px"
-                                srcset="../assets/images/prize/HAMIC.JPG" alt="" src="../assets/images/prize/HAMIC.JPG"
+                                srcset="../assets/images/third_prize.png" alt="" src="../assets/images/third_prize.png"
                                 loading="lazy" class="teaser-img _3" />
 
                             <img sizes="(max-width: 991px) 100vw, (max-width: 1279px) 49vw, 571.328125px"
-                                srcset="../assets/images/prize/MIM_MEDIA.jpg" alt=""
-                                src="../assets/images/prize/MIM_MEDIA.jpg" loading="lazy" class="teaser-img _4" />
+                                srcset="../assets/images/consolation.png" alt=""
+                                src="../assets/images/consolation.png" loading="lazy" class="teaser-img _4" />
                         </div>
                     </div>
                 </div>
