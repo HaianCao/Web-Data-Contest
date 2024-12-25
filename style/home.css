@@ -342,13 +342,13 @@
   text-align: center;
 }
 
-.diamond {
+.sponsor-container {
   width: 80%;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Màu tối với độ trong suốt */
+  background-color: rgba(255, 251, 253, 0.38);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: white; /* Đảm bảo nội dung bên trong dễ đọc */
+  color: white; 
 }
 
 .logo-container {
@@ -361,7 +361,7 @@
 
 .logo-container img {
   max-width: 120px;
-  height: auto;
+  height: fit-content;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
