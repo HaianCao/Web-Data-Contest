@@ -62,7 +62,11 @@ body {
     margin: 0;
     /* font-family: Arial,sans-serif; */
     font-size: 14px;
-    line-height: 20px
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
 }
 
 img {
@@ -380,6 +384,10 @@ input.w-button {
         display: block
     }
 
+    .teaser-column.none.mobile {
+        display: none
+    }
+
     .teaser-grid {
         flex-direction: column
     }
@@ -440,10 +448,6 @@ input.w-button {
     .teaser-grid {
         grid-column-gap: 0px;
         grid-row-gap: 0px
-    }
-
-    .teaser-column.none.mobile {
-        display: none
     }
 
     .teaser-copy-wrap {

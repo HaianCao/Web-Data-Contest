@@ -11,7 +11,7 @@
   background-position: center;
   color: white;
   text-align: center;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1194,5 +1194,12 @@ body {
 
     .prize-section h1 {
       font-size: 2rem;
-  }
+    }
+}
+
+@media (max-width: 500px) {
+    .prize-card {
+        width: 350px;
+        height: 550px;
+    }
 }
