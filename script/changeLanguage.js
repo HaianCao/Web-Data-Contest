@@ -25,6 +25,8 @@ function checkCookie() {
             english[i].classList.add("disable-language");
         }
     }
+    document.querySelector("body").style.overflow = "auto";
+    document.getElementsByClassName("loading-screen")[0].style.display = "none";
 }
 
 function changeToEnglish() {
