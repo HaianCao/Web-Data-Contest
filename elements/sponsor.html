@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataFlow 2025: Mastering the Data Waves</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Tektur' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/tecwo" rel="stylesheet">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/footer.css">
@@ -17,6 +19,11 @@
 
 <body onload="checkCookie()">
     <!-- DAY LA WEBPAGE THONG TIN VE NHA TAI TRO & THONG TIN LIEN HE -->
+
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div id="loader"></div>
+     </div>
 
     <!-- [NAVBAR] -->
     <nav class="navbar">
@@ -34,7 +41,7 @@
             <li class="vietnamese"><a href="../index.html">Trang chủ</a></li>
             <li class="vietnamese"><a href="../index.html#aboutus">Về chúng tôi</a></li>
             <li class="vietnamese"><a href="../index.html#timeline">Lịch trình</a></li>
-            <li class="vietnamese"><a href="sponsor.html">Nhà tại trợ</a></li>
+            <li class="vietnamese"><a href="sponsor.html">Nhà tài trợ</a></li>
             <li class="vietnamese"><a href="prizes.html">Giải thưởng</a></li>
             <li class="vietnamese"><a href="register.html">Đăng ký</a></li>
             <li class="vietnamese"><a href="faq.html">Hỏi đáp</a></li>
@@ -86,8 +93,10 @@
 
                 <div class="category__projects">
                     <div class="project-card">
-                        <img src="../assets/images/sponsor/faq-header.png" alt="Nhà Tài Trợ  1"
-                            class="project-card__image">
+                        <div class="project-card__image"><img src="../assets/images/sponsor/maxflowLogo.jpg" 
+                            style="width:min-content;" alt="Nhà Tài Trợ  Maxflow">
+                        </div>
+                        
                         <div class="project-card__info">
                             <h5>Maxflow</h5>
                             <!-- <p>XXXXXX VNĐ</p> -->
@@ -97,7 +106,7 @@
                             et sint laudantium non rem veritatis.</p>
                         <button class="btn">View</button>
                     </div>
-                    <!-- <div class="project-card">
+                    <div class="project-card">
                         <img src="../assets/images/sponsor/faq-header.png" alt="Nhà Tài Trợ  2"
                             class="project-card__image">
                         <div class="project-card__info">
@@ -109,6 +118,7 @@
                             et sint laudantium non rem veritatis.</p>
                         <button class="btn">View</button>
                     </div>
+                    <!--
                     <div class="project-card">
                         <img src="../assets/images/sponsor/faq-header.png" alt="Nhà Tài Trợ  3"
                             class="project-card__image">

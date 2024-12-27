@@ -11,7 +11,7 @@
   background-position: center;
   color: white;
   text-align: center;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +86,7 @@
     text-align: left;
     margin-left: 5%;
     height: 100%;
+    color: #007bff;
 }
 
 .mission-text p {
@@ -372,9 +373,9 @@
   height: 100%;
 }
 
-* {
+/* * {
   font-family: Nunito, sans-serif;
-}
+} */
 
 .team-cards-inner-container {
   display: flex;
@@ -958,16 +959,18 @@ body {
 }
 
 #register h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0 0 10px;
-    background: linear-gradient(90deg, #4fb8ff, #ff8c00, #ff0080, #4fb8ff); /* Gradient colors */
-    background-size: 200% 100%; /* Make the gradient larger for smooth animation */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-flow 5s infinite linear; /* Apply animation */
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  background: linear-gradient(90deg, #4fb8ff, #ff8c00, #ff0080, #4fb8ff);
+  background-size: 200% 100%; /* Make the gradient larger for smooth animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 5s infinite linear; 
+  text-align: center;
 }
+
 
 @keyframes gradient-flow {
     0% {
@@ -1013,4 +1016,190 @@ body {
 #register .cta-button i {
   margin-left: 10px; 
   font-size: 20px; 
+}
+
+
+/* giai thuong */
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #a6c7ff;
+}
+.prize-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.prize-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.prize-section h1 {
+    font-size: 2.5rem;
+    color: #00b3ff;
+}
+.prize-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+.prize-card {
+    background-color: #07182e;
+    width: 305px;
+    height: 583px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prize-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.prize-card::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+.prize-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.prize-card img {
+    z-index: 1;
+    position: relative;
+    width: 80%;
+}
+
+.prize-card p {
+    z-index: 2;
+    color: #07182e;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.prize-amount {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 2;
+    animation: glow 3s infinite alternate, heartbeat 1.2s infinite ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #27ae60, 0 0 10px #27ae60, 0 0 15px #27ae60;
+        color: #27ae60;
+    }
+    25% {
+        text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;
+        color: #ff5733;
+    }
+    50% {
+        text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
+        color: #3498db;
+    }
+    75% {
+        text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6, 0 0 30px #9b59b6;
+        color: #9b59b6;
+    }
+    100% {
+        text-shadow: 0 0 10px #2ecc71, 0 0 20px #2ecc71, 0 0 30px #2ecc71;
+        color: #2ecc71;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1350px) {
+    .prize-grid {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+    .prize-card {
+        width: 235px;
+        height: 513px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .prize-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .prize-card {
+        width: 330px;
+        height: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prize-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .prize-card {
+        width: 484px;
+        height: 640px;
+        margin: 0 auto;
+    }
+
+    .prize-section h1 {
+      font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .prize-card {
+        width: 350px;
+        height: 550px;
+    }
 }
