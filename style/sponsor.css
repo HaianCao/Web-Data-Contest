@@ -140,10 +140,10 @@ img{
 }
 
 .project-card__image img {
-    max-width: 200px;
+    max-width: 180px;
     margin: auto;
     position: absolute; 
-    top: 25%;
+    top: 21.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

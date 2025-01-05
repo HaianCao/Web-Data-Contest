@@ -35,6 +35,8 @@ html, body {
     width: 100%;
     background-color: white;
     display: block;
+    position: absolute;
+    z-index: 10000;
   }
 
 #loader {
