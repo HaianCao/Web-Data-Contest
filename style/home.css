@@ -286,8 +286,14 @@
 }
 
 @media (max-width: 768px) {
-  #timeline img {
+  #timeline img.vietnamese {
     content: url('../assets/images/[DF]\ timeline\ web\ no\ bg.png'); /* Replace image for mobile */
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  #timeline img.english {
+    content: url('../assets/images/[DF]\ timeline\ web\ eng\ ver.png'); /* Replace image for mobile */
     width: 100%;
     border-radius: 5px;
   }
@@ -1088,6 +1094,11 @@ body {
     transition: all 0.2s linear;
 }
 
+.prize-card p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 @keyframes rotBGimg {
     from {
         transform: rotate(0deg);
@@ -1199,7 +1210,7 @@ body {
 
 @media (max-width: 500px) {
     .prize-card {
-        width: 350px;
+        width: 100%;
         height: 550px;
     }
 }

@@ -132,11 +132,20 @@ img{
 .project-card{
     position: relative;
     width: 25%;
-    height: 420px;
+    height: 550px;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card__image img {
+    max-width: 200px;
+    margin: auto;
+    position: absolute; 
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project-card__image{
@@ -146,6 +155,7 @@ img{
     object-position: top center;
     border: 1px solid #e5e7eb;
     margin-bottom: 20px;
+    /* text-align: center; */
 }
 
 .project-card__info{
@@ -392,7 +402,7 @@ img{
 
     .project-card{
         width: 100%;
-        height: 500px;
+        height: 600px;
     }
 
     .project-card__image{

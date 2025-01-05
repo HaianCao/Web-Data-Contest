@@ -185,11 +185,11 @@ input.w-button {
 
 .teaser-section {
     padding-top: 160px;
-    padding-bottom: 60px
+    /* padding-bottom: 60px */
 }
 
 .copy-small {
-    color: gray;
+    color: rgb(204, 204, 204);
     /* font-family: Helvetica-400,sans-serif; */
     font-size: 16px;
     font-weight: 400;
