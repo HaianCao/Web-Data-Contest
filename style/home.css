@@ -346,12 +346,15 @@
 }
 
 .sponsor-container {
-  width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 50%;
+  height:200px;
   padding: 20px;
-  background-color: rgba(255, 251, 253, 0.38);
+  background: radial-gradient(circle, #fff,#e4efff,#baceed,#2a5494);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: white; 
 }
 
 .logo-container {
@@ -359,11 +362,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
 
 .logo-container img {
-  max-width: 120px;
+  max-width: 200px;
   height: fit-content;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1205,6 +1208,10 @@ body {
 
     .prize-section h1 {
       font-size: 2rem;
+    }
+    .sponsor-container {
+        height: auto;
+        width: 80%;
     }
 }
 
