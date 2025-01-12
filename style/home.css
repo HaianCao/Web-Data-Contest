@@ -340,6 +340,49 @@
 }
 
 /* Sponsors */
+
+.sponsor-text {
+  font-size: 3rem; /* Kích thước chữ lớn */
+  font-weight: bold;
+  /* text-shadow: 
+    0 0 5px rgb(150, 176, 176); */
+  text-transform: uppercase; /* Viết hoa toàn bộ chữ */
+  letter-spacing: 5px; /* Khoảng cách giữa các ký tự */
+}
+
+.gold-sponsor-text {
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold;
+  color: rgb(237, 255, 167); /* Màu chính của chữ */
+  text-shadow: 
+  0 0 5px rgb(179, 172, 105), 
+  0 0 10px rgb(212, 255, 0), 
+  0 0 20px rgb(255, 234, 0);
+  letter-spacing: 4px; /* Khoảng cách giữa các ký tự */
+}
+
+.silver-sponsor-text {
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold;
+  color: rgb(210, 224, 224); /* Màu chính của chữ */
+  text-shadow: 
+    0 0 5px rgb(127, 151, 151), 
+    0 0 10px rgb(235, 243, 243), 
+    0 0 20px rgb(235, 243, 243);
+  letter-spacing: 4px; /* Khoảng cách giữa các ký tự */
+}
+
+.expertise-sponsor-text {
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold;
+  color: rgb(167, 255, 255); /* Màu chính của chữ */
+  text-shadow: 
+    0 0 5px rgb(139, 212, 212), 
+    0 0 10px #0ff, 
+    0 0 20px #0ff;
+  letter-spacing: 4px; /* Khoảng cách giữa các ký tự */
+}
+
 #sponsor {
   display: flex;
   flex-direction: column;
@@ -368,7 +411,8 @@
   height:200px;
   padding: 20px;
   /* background: radial-gradient(circle, #f5f5f5,#e4efff,#baceed,#2a5494); */
-  background-image: url("../assets/images/theme-sponsor.jpg");
+  /* background-image: url("../assets/images/theme-sponsor.jpg"); */
+  background-image: url("../assets/theme.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
