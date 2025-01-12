@@ -31,7 +31,7 @@
 }
 
 .social-icon, .social-icon-hamic, .social-icon-mm {
-  height: fit-content;
+  height: auto;
 }
 
 .social-icon-hamic {
@@ -97,6 +97,15 @@
   .copyright {
     font-size: 11px;
   }
+  .footer-container {
+    display: block;
+    }
+    .social-links {
+        display: block;
+    }
+    .social-links div p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 430px) {
@@ -109,14 +118,4 @@
   .copyright {
     font-size: 7px;
   }
-}
-
-
-@media (max-width: 300px) {
-    .footer-container {
-        display: block;
-    }
-    .social-links {
-        display: block;
-    }
 }
