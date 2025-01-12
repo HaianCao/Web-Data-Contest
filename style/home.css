@@ -11,7 +11,7 @@
   background-position: center;
   color: white;
   text-align: center;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +63,7 @@
 
 .mission-title {
     margin-left: 5%;
+    padding-left: 20px;
 }
 
 .mission-title h2 {
@@ -74,6 +75,7 @@
 }
 
 .mission-content {
+    padding-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -191,6 +193,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-right: 40px;
 }
 
 .host-HAMIC h2,
@@ -244,6 +247,11 @@
     text-align: justify;
     font-size: 0.9rem;
   }
+
+  .host-HAMIC .text-content,
+.host-MIM .text-content {
+    padding-right: 0%;
+}
 }
 
 /* Timeline */
@@ -287,13 +295,13 @@
 
 @media (max-width: 768px) {
   #timeline img.vietnamese {
-    content: url('../assets/images/[DF]\ timeline\ web\ no\ bg.png'); /* Replace image for mobile */
+    content: url('../assets/images/timeline-vi-ver.png'); /* Replace image for mobile */
     width: 100%;
     border-radius: 5px;
   }
 
   #timeline img.english {
-    content: url('../assets/images/[DF]\ timeline\ web\ eng\ ver.png'); /* Replace image for mobile */
+    content: url('../assets/images/timeline-end-ver.png'); /* Replace image for mobile */
     width: 100%;
     border-radius: 5px;
   }
@@ -366,9 +374,14 @@
 }
 
 .logo-container img {
-  max-width: 200px;
+  max-width: 210px;
+  max-height: 70px;
   height: fit-content;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container .sil {
+  max-height: 85px;
 }
 
 .logo-container img:hover {

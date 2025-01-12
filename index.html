@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
   <title>DataFlow 2025: Mastering the Data Waves</title>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/home.css">
@@ -46,7 +47,7 @@
 
   <!-- [NAVBAR] -->
   <nav class="navbar">
-    <div class="logo"><img src="./assets/icons/Logo_ Trong trang.png" alt=""></div>
+    <div class="logo"><img src="./assets/icons/nav-logo.png" alt="DataFlow 2025"></div>
     <ul class="nav-links">
         <!-- English -->
       <li class="english"><a href="index.html">Home</a></li>
@@ -67,10 +68,10 @@
       <!-- Change language -->
       <li class="language">
         <img class="lang en-gb" width="28" height="28" src="https://img.icons8.com/emoji/28/united-kingdom-emoji.png"
-          alt="united-kingdom-emoji" onclick="changeToEnglish()"/>
+          alt="English" onclick="changeToEnglish()"/>
         <span class="separator">/</span>
         <img class="lang vi-vn" width="28" height="28" src="https://img.icons8.com/emoji/28/vietnam-emoji.png"
-          alt="vietnam-emoji" onclick="changeToVietnamese()"/>
+          alt="Vietnamese" onclick="changeToVietnamese()"/>
       </li>
     </ul>
     <div class="hamburger">
@@ -140,7 +141,7 @@
           </p>
         </div>
         <div class="mission-image">
-          <img src="./assets/images/intro.jpg" alt="DataFlow 2025 Highlights">
+          <img src="./assets/images/mission.jpg" alt="DataFlow 2025 - Mission">
           <script>
             document.addEventListener("DOMContentLoaded", function () {
               const missionImage = document.querySelector(".mission-image img");
@@ -166,7 +167,7 @@
       <div class="host-HAMIC">
         <!-- Hình ảnh bên trái -->
         <div class="HAMIC-image">
-          <img src="./assets/images/IMG_2117.JPG" alt="Ảnh tập thể HAMIC">
+          <img src="./assets/images/hamic-host.JPG" alt="HAMIC">
         </div>
         <!-- Văn bản bên phải -->
         <div class="text-content">
@@ -203,7 +204,7 @@
       <div class="host-MIM">
         <!-- Hình ảnh bên trái -->
         <div class="MIM-image">
-          <img src="./assets/images/MIM_MEDIA.jpg" alt="Ảnh tập thể MIM MEDIA">
+          <img src="./assets/images/mim-media-host.jpg" alt="MIM MEDIA">
         </div>
         <!-- Văn bản bên phải -->
         <div class="text-content">
@@ -264,23 +265,22 @@
     <div id="timeline">
         <!-- English -->
       <h1 class="english">Timeline</h1>
-      <img class="english" src="./assets/images/[DF] timeliene eng ver.png" alt="timeline">
+      <img class="english" src="./assets/images/timeline-eng-hoz.png" alt="timeline">
       <!-- Vietnam -->
       <h1 class="vietnamese">Lịch trình</h1>
-      <img class="vietnamese" src="./assets/images/[DF] timeline.png" alt="timeline">
+      <img class="vietnamese" src="./assets/images/timeline-vi-hoz.png" alt="timeline">
     </div>
 
     <!-- Gioi thieu cac nha tai tro (gioi thieu ngan) -->
     <div id="sponsor">
       <h1 class="sponsor-title english" style="color: rgb(114, 114, 255);">Sponsors</h1>
       <h1 class="sponsor-title vietnamese" style="color: rgb(114, 114, 255);">Nhà tài trợ</h1>
-      <h1 class="sponsor-title english gold-sponsor">Golden</h1>
+      <h1 class="sponsor-title english gold-sponsor">Gold</h1>
       <h1 class="sponsor-title vietnamese">Vàng</h1>
       <div class="sponsor-container">
         <div class="logo-container">
-          <img src="./assets/images/sponsor/maxflow_logo.png" alt="maxflow-logo">
-          <img src="./assets/images/sponsor/logo VNPAY_ngang-Photoroom.png" alt="VNPay">
-          <!-- <img src="./assets/images/logo.png" alt="Logo 3"> -->
+          <img src="./assets/images/sponsor/logo-maxflow.png" alt="Maxflow R&D">
+          <img src="./assets/images/sponsor/logo-vnpay.png" alt="VNPAY">
           <!-- Thêm các logo khác tại đây -->
         </div>
       </div>
@@ -289,9 +289,7 @@
       <h1 class="sponsor-title vietnamese">Bạc</h1>
       <div class="sponsor-container">
         <div class="logo-container">
-          <img src="./assets/images/sponsor/Booking Care-Photoroom.png" alt="BookingCare">
-          <!-- <img src="./assets/images/logo.png" alt="Logo 2">
-          <img src="./assets/images/logo.png" alt="Logo 3"> -->
+          <img class="sil" src="./assets/images/sponsor/logo-bookingcare.png" alt="BookingCare">
           <!-- Thêm các logo khác tại đây -->
         </div>
       </div>
@@ -300,9 +298,10 @@
       <h1 class="sponsor-title vietnamese">Chuyên môn</h1>
       <div class="sponsor-container">
         <div class="logo-container">
-          <img src="./assets/images/sponsor/Bản sao của CMC Global_vertical_blue.png" alt="CMC Global">
-          <img src="./assets/images/sponsor/Logo FPT_2023.png" alt="FPT IS">
-          <!-- <img src="./assets/images/logo.png" alt="Logo 3"> -->
+          <img src="./assets/images/sponsor/logo-fpt.png" alt="FPT IS">
+          <img src="./assets/images/sponsor/logo-ssi.png" alt="SSI">
+          <img src="./assets/images/sponsor/logo-cmc.png" alt="CMC Global">
+          <img src="./assets/images/sponsor/logo-dx.png" alt="DX">
           <!-- Thêm các logo khác tại đây -->
         </div>
       </div>
@@ -475,7 +474,7 @@
             <i class="fas fa-arrow-right"></i>
           </button>
           <br><br>
-          <button class="cta-button" onclick="window.open('https://discord.gg/hrbSZy6y4q', '_blank')">
+          <button class="cta-button" onclick="window.open('https://discord.gg/p5xTg4NeWC', '_blank')">
             Discord
           </button>
         </div>
@@ -488,7 +487,7 @@
             <i class="fas fa-arrow-right"></i>
           </button>
           <br><br>
-          <button class="cta-button" onclick="window.open('https://discord.gg/hrbSZy6y4q', '_blank')">
+          <button class="cta-button" onclick="window.open('https://discord.gg/p5xTg4NeWC', '_blank')">
             Discord
           </button>
         </div>
@@ -499,7 +498,7 @@
   <!-- [FOOTER] -->
   <!-- Cac thong tin ve truong, ve 2 CLB, [email, dien thoai (contact)] -->
   <footer class="footer">
-    <img class="mainlogo" src="./assets/icons/Logo_ Trong trang.png" alt="Main Logo">
+    <img class="mainlogo" src="./assets/icons/nav-logo.png" alt="DataFlow 2025">
     <div class="footer-container">
       <div class="footer-item footer-club">
         <!-- English -->

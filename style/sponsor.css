@@ -49,7 +49,7 @@ img{
 }
 
 .showcase{
-    padding: 80px 60px 100px;
+    padding: 120px 60px 100px;
     background: #e5e7eb;
 }
 
@@ -132,7 +132,7 @@ img{
 .project-card{
     position: relative;
     width: 25%;
-    height: 550px;
+    min-height: 550px;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
@@ -338,7 +338,7 @@ img{
     }
 
     .showcase{
-        padding: 80px 30px 100px;
+        padding: 120px 30px 100px;
     }
 
     .category__header{
@@ -402,7 +402,6 @@ img{
 
     .project-card{
         width: 100%;
-        height: 600px;
     }
 
     .project-card__image{
@@ -418,4 +417,8 @@ img{
         gap: 16px;
     }
 
+}
+
+.project-card__image img {
+    max-height: 80px;
 }
