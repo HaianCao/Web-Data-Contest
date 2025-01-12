@@ -156,6 +156,9 @@ img{
     border: 1px solid #e5e7eb;
     margin-bottom: 20px;
     /* text-align: center; */
+    background-image: url(../assets/images/white-theme.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .project-card__info{
@@ -298,9 +301,9 @@ img{
 
 @media screen and (max-width: 992px) {
     
-    .navbar{
+    /* .navbar{
         padding: 20px 30px;
-    }
+    } */
 
     .hero{
         padding: 100px 30px 40px;
