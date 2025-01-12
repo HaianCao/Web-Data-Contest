@@ -4,15 +4,17 @@
     Trong truong hop muon them CSS thi tao them file CSS moi.
 */
 :root {
-    color-scheme: light only;
+    color-scheme: only light;
 }
 
 body {
     font-family: 'Montserrat', 'Josefin Sans', 'Tektur', 'Barlow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 245, 245);
     background-image: url("../assets/images/Background.png");
     background-size: 100% 100%;
+    color-scheme: only light;
 }
 
 html, body {
@@ -25,6 +27,7 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     overflow: hidden;
+    color-scheme: only light;
 }
 
 .disable-language {
@@ -37,7 +40,7 @@ html, body {
     height: 100%;
     justify-content: center;
     width: 100%;
-    background-color: white;
+    background-color: rgb(249, 249, 249);
     display: block;
     position: absolute;
     z-index: 10000;

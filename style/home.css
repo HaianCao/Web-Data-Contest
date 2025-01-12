@@ -367,10 +367,26 @@
   width: 50%;
   height:200px;
   padding: 20px;
-  background: radial-gradient(circle, #fff,#e4efff,#baceed,#2a5494);
+  /* background: radial-gradient(circle, #f5f5f5,#e4efff,#baceed,#2a5494); */
+  background-image: url("../assets/images/theme-sponsor.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* @media (prefers-color-scheme: light) {
+    .sponsor-container {
+        background: radial-gradient(circle, #f5f5f5,#e4efff,#baceed,#2a5494) !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .sponsor-container {
+        background-image: ;
+        background-color: white !important;
+    }
+} */
 
 .logo-container {
   display: flex;
