@@ -53,6 +53,12 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    #home .intro-content p {
+        text-align: left;
+    }
+}
+
 /* Mission Section */
 .mission {
     background-color: white;
@@ -114,7 +120,7 @@
 
 @media (max-width: 768px) {
     .mission-title {
-        margin-left: 5%;
+        margin-left: 0;
         text-align: center;
     }
 
@@ -126,7 +132,7 @@
     .mission-content {
         flex-direction: column;
         align-items: center;
-        text-align: justify;
+        /* text-align: justify; */
         padding: 0 10%;
     }
 
@@ -139,6 +145,7 @@
         padding: 0;
         line-height: 1.6rem;
         font-size: 1rem;
+        text-align: left;
     }
 
     .mission-image img {
@@ -244,7 +251,7 @@
   .host-MIM p {
     padding-left: 5%;
     padding-right: 5%;
-    text-align: justify;
+    text-align: left;
     font-size: 0.9rem;
   }
 

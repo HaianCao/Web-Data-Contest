@@ -1,5 +1,5 @@
 .footer {
-  background-image: url('/assets/images/Background.jpg');
+  /* background-image: url('/assets/images/Background.jpg'); */
   color: #fff;
   padding: 20px 40px;
   text-align: left;
@@ -16,7 +16,7 @@
 
 .footer-item {
   flex: 1;
-  min-width: 340px;
+  /* min-width: 340px; */
   margin: 10px;
   text-align: center;
 }
@@ -109,4 +109,14 @@
   .copyright {
     font-size: 7px;
   }
+}
+
+
+@media (max-width: 300px) {
+    .footer-container {
+        display: block;
+    }
+    .social-links {
+        display: block;
+    }
 }
