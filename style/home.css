@@ -280,7 +280,7 @@
 }
 
 #timeline h1 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
   color: white;
@@ -346,7 +346,7 @@
   font-weight: bold;
   /* text-shadow: 
     0 0 5px rgb(150, 176, 176); */
-  text-transform: uppercase; /* Viết hoa toàn bộ chữ */
+  /*text-transform: uppercase;*/ /* Viết hoa toàn bộ chữ */
   letter-spacing: 5px; /* Khoảng cách giữa các ký tự */
 }
 

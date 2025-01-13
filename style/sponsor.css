@@ -62,7 +62,7 @@ img{
 
 .showcase__header h3{
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .showcase__header .btn{
@@ -95,7 +95,7 @@ img{
 
 .category__title h4{
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .category__title i{
@@ -171,7 +171,7 @@ img{
 
 .project-card__info h5{
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .project-card__info p{
@@ -182,7 +182,7 @@ img{
 
 .project-card__desc{
     font-size: 13px;
-    color: #7a7a7a;
+    color: #3a3a3a;
     margin-bottom: 30px;
 }
 
