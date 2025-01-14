@@ -13,17 +13,20 @@ function checkCookie() {
     let language = getCookie("language");
     if (language == undefined) {
         setCookie("english");
+        language = "english"
     }
     if (language == "english") {
         let vietnamese = document.getElementsByClassName("vietnamese");
         for (let i = 0; i < vietnamese.length; i++) {
             vietnamese[i].classList.add("disable-language");
         }
+        console.log(1)
     } else {
         let english = document.getElementsByClassName("english");
         for (let i = 0; i < english.length; i++) {
             english[i].classList.add("disable-language");
         }
+        console.log(2)
     }
     document.querySelector("body").style.overflow = "auto";
     document.getElementsByClassName("loading-screen")[0].style.display = "none";

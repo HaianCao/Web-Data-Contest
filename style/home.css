@@ -442,8 +442,8 @@
 
 .logo-container img {
   max-width: 210px;
-  max-height: 70px;
   height: fit-content;
+  max-height: 70px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
